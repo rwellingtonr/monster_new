@@ -4,7 +4,7 @@
 
 ## Motivations
 
-This project was created in order to practice new tecniques as Hooks and Redux
+This project was created in order to practice new techniques as Hooks and Redux
 
 ## Features
 

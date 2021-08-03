@@ -24,6 +24,7 @@ function App(state) {
 
   // Grab the users from an online Json
   useEffect(() => {
+    document.title = "Monster Cards"
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .catch((e) => console.log("Check out this http path", e))

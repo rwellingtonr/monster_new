@@ -1,7 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { Provider } from "react-redux"
-import { createStore } from "redux"
+import { createStore, applyMiddleware } from "redux"
+import { createLogger } from "redux-logger"
 // Style
 import "./containers/index.css"
 import "tachyons"
@@ -10,7 +11,10 @@ import App from "./containers/App"
 import reportWebVitals from "./reportWebVitals"
 import { searchMonsters } from "./reducers"
 
-const store = createStore(searchMonsters)
+// Logger will help you to Debuggin the app
+const logger = createLogger()
+//  Create a store using redux
+const store = createStore(searchMonsters, applyMiddleware(logger))
 
 ReactDOM.render(
   // Provider will be responsible to provide all the Redux proprieties to its chields
