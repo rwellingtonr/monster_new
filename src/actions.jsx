@@ -10,7 +10,8 @@ export const setSearchField = (text) => ({
   type: CHANGE_SEARCHFIELD,
   payload: text,
 })
-
+//return a function, by this reason it needs the Dispatch
+// this function should load intead componentDidMount
 export const requestMonsters = (dispatch) => {
   dispatch({ type: REQUEST_MONSTERS_PENDING })
   fetch("https://jsonplaceholder.typicode.com/users")

@@ -10,7 +10,13 @@ This project was created in order to practice new techniques as Hooks and Redux
 
 Each card represents an user, you can look for someone using the search field. Using this one, the card list only will return the matched values
 
-## Running locally
+## Technologies
+
+- ReactJS
+- Hooks
+- Redux
+
+## Running Locally
 
 ```bash
 git clone https://github.com/rwellingtonr/monster_new.git
